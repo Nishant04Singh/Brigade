@@ -13,9 +13,9 @@ events.on("exec", (e,project) => {
     "dockerd-entrypoint.sh &",
     "sleep 30",
     "cd /src",
-    "docker build -t compiler/active:04 .",
+    "docker build -t activecompiler/active:04 .",
     "docker login -u $DOCKER_USER -p $DOCKER_PASS",
-    "docker push compiler/active:04"
+    "docker push activecompiler/active:04"
   ];
   
   dockerBuild.run();
