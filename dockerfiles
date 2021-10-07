@@ -1,9 +1,0 @@
-#getting base image ubuntu
-FROM ubuntu
-
-MAINTAINER Nishant <nishant.singh@successive.tech>
-
-RUN apt-get update
-
-CMD ["echo","My first image..."]
-
